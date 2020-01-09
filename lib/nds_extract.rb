@@ -40,7 +40,8 @@ def total_gross(source)
   grand_total = 0  
   row_index = 0 
   while row_index < list_of_directors(source).length do
-   grand_total += list_of_directors(source)[row_index]
+   grand_total += directors_totals(source)
+   binding.pry 
    row_index += 1 
 
    grand_total
