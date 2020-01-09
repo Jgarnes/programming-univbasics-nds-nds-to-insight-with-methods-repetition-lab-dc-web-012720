@@ -45,7 +45,7 @@ def total_gross(source)
    row_index += 1 
   end 
    grand_total
-  end 
+  
    
   
 
