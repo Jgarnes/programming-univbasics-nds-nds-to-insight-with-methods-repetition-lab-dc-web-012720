@@ -36,15 +36,12 @@ def list_of_directors(source)
 end 
 
 def total_gross(source)
-  directors_names = list_of_directors(source)
   
-  total = 0  
+  grand_total = 0  
   row_index = 0 
   while row_index < list_of_directors(source).length do
-  glue_item = list_of_directors(source)[row_index] = directors_totals(source)
-    total = directors_totals(source)[row_index]
-   binding.pry
-    row_index += 1 
+   grand_total += directors_totals(source)
+   row_index += 1 
 
    total
   end 
